@@ -1,0 +1,301 @@
+<?php
+
+    $name=$_POST['name'];
+  $code=$_POST['code'];
+	
+		$link=mysql_connect("localhost","root","");
+		if(!$link)
+			{
+			die("could't connect".mysql_error());
+			}
+		mysql_select_db("databaseimage")
+			or die("couldn't open database:".mysql_error());
+
+   if(isset($_POST['submit']))
+	{
+		$query="INSERT INTO information (name,code) VALUES ('$name','$code')";
+		mysql_query($query,$link)
+		or die("Error ".mysql_error());		
+		
+	}
+	
+		mysql_close($link);
+					
+?>
+
+<style type="text/css">
+.d {	font-family: Verdana, Geneva, sans-serif;
+}
+.d {	color: #FFF;
+}
+body {
+	background-image: url(../bg2.jpg);
+	background-color: #FFF;
+	background-repeat: repeat;
+}
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	width:1073px;
+	height:863px;
+	z-index:1;
+	left: 90px;
+	top: 272px;
+	background-image: url(../DnD/bg.jpg);
+}
+#apDiv3 {
+	position:absolute;
+	width:254px;
+	height:33px;
+	z-index:1;
+	left: -1px;
+	top: -150px;
+}
+#apDiv4 {
+	position:absolute;
+	width:254px;
+	height:41px;
+	z-index:2;
+	left: 277px;
+	top: -60px;
+}
+#apDiv5 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+	left: 397px;
+	top: 31px;
+}
+#apDiv6 {
+	position:absolute;
+	width:254px;
+	height:33px;
+	z-index:4;
+	left: 13px;
+	top: 235px;
+}
+#apDiv7 {
+	position:absolute;
+	width:236px;
+	height:34px;
+	z-index:5;
+	left: 402px;
+	top: 140px;
+}
+#apDiv8 {
+	position:absolute;
+	width:277px;
+	height:43px;
+	z-index:6;
+	left: 403px;
+	top: 185px;
+}
+#apDiv9 {
+	position:absolute;
+	width:251px;
+	height:35px;
+	z-index:7;
+	left: 403px;
+	top: 237px;
+}
+#apDiv10 {
+	position:absolute;
+	width:200px;
+	height:36px;
+	z-index:8;
+	left: 20px;
+	top: 86px;
+}
+#apDiv2 #apDiv10 em {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.d {
+	color: #FFF;
+}
+.d a {
+	color: #FFF;
+}
+#apDiv11 {
+	position:absolute;
+	width:255px;
+	height:115px;
+	z-index:2;
+	left: 543px;
+	top: 614px;
+}
+#apDiv11 strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv12 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+#apDiv {
+	position:absolute;
+	width:314px;
+	height:35px;
+	z-index:7;
+	left: 16px;
+	top: 354px;
+}
+#apDiv13 {
+	position:absolute;
+	width:312px;
+	height:36px;
+	z-index:2;
+	left: 18px;
+	top: 398px;
+}
+#apDiv14 {
+	position:absolute;
+	width:313px;
+	height:38px;
+	z-index:9;
+	left: 409px;
+	top: 355px;
+}
+#apDiv15 {
+	position:absolute;
+	width:275px;
+	height:41px;
+	z-index:10;
+	left: 409px;
+	top: 398px;
+}
+#apDiv16 {
+	position:absolute;
+	width:238px;
+	height:61px;
+	z-index:11;
+	left: 23px;
+	top: 300px;
+}
+#apDiv2 #apDiv16 strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv17 {
+	position:absolute;
+	width:200px;
+	height:32px;
+	z-index:12;
+	left: 25px;
+	top: 469px;
+}
+#apDiv2 #apDiv17 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv18 {
+	position:absolute;
+	width:311px;
+	height:50px;
+	z-index:13;
+	left: 27px;
+	top: 532px;
+}
+#apDiv19 {
+	position:absolute;
+	width:343px;
+	height:37px;
+	z-index:14;
+	left: 28px;
+	top: 602px;
+}
+#apDiv20 {
+	position:absolute;
+	width:200px;
+	height:71px;
+	z-index:15;
+	left: 545px;
+	top: -73px;
+}
+#apDiv21 {
+	position:absolute;
+	width:1073px;
+	height:49px;
+	z-index:16;
+	left: 0px;
+	top: 813px;
+	background-image: url(../DnD/bg_coconut.jpg);
+}
+#apDiv2 #apDiv21 div a {
+	color: #FFF;
+}
+#apDiv22 {
+	position:absolute;
+	width:274px;
+	height:39px;
+	z-index:2;
+	left: 404px;
+	top: 142px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#a {
+	color: #FFF;
+}
+.ab {
+	color: #FFF;
+}
+.abc {
+	color: #FFF;
+}
+#a strong {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+.ab strong {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+.abc strong {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+#a {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+</style>
+<form method="post" action="enter2.php" />
+<div align="center">
+  <h1 id="a">LIPTON FB CONTEST</h1>
+</div>
+<p align="center"> <span id="a">
+  <marquee>
+  </marquee>
+</span></p>
+<p align="center">
+  <input type="text" name="name" id="name" />
+</p>
+<p align="center" class="ab"><strong>Enter Your Name</strong></p>
+<p align="center">
+  <input type="text" name="code" id="code" />
+</p>
+<p align="center" class="abc"><strong>Enter The Code</strong></p>
+<p align="center">
+  <input type="submit" name="submit" id="button" value="Submit" />
+</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
