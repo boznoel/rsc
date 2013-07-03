@@ -1,6 +1,6 @@
 <?php
 
-    $name=$_POST['name'];
+  $name=$_POST['name'];
   $code=$_POST['code'];
 	
 		$link=mysql_connect("localhost","root","");
